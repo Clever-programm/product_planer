@@ -1,8 +1,11 @@
+from PyQt5 import uic
 from PyQt5.QtWidgets import QMainWindow
 
 
 class MainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
+        uic.loadUi('src/resources/ui/main_window.ui', self)
+        self.show()
 
-        # TODO: Добавить ui и соответствующие методы
+        # TODO: Добавить методы
