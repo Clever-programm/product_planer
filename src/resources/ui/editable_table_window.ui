@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Materials</class>
+ <widget class="QMainWindow" name="Materials">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>747</width>
+    <height>567</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Материалы</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(158, 194, 159);</string>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <property name="leftMargin">
+     <number>20</number>
+    </property>
+    <property name="topMargin">
+     <number>20</number>
+    </property>
+    <property name="rightMargin">
+     <number>20</number>
+    </property>
+    <property name="bottomMargin">
+     <number>20</number>
+    </property>
+    <item>
+     <widget class="QTableView" name="tableView">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(241, 241, 241);
+border-color: rgb(137, 168, 138);</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <property name="spacing">
+       <number>20</number>
+      </property>
+      <property name="leftMargin">
+       <number>20</number>
+      </property>
+      <property name="topMargin">
+       <number>10</number>
+      </property>
+      <property name="rightMargin">
+       <number>20</number>
+      </property>
+      <item>
+       <widget class="QPushButton" name="add_btn">
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+	color: rgb(255, 255, 255);
+	background-color: rgba(255, 255, 255, 50);
+	font: 12pt &quot;Times New Roman&quot;;
+	font-weight: 500;
+	border-radius: 15px;
+	padding: 5px;
+}
+
+QPushButton:pressed {
+	background-color: rgba(255, 255, 255, 30);
+	padding-top: 7px;
+	padding-bottom: 3px;
+}</string>
+        </property>
+        <property name="text">
+         <string>Добавить</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="remove_btn">
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+	color: rgb(255, 255, 255);
+	background-color: rgba(255, 255, 255, 50);
+	font: 12pt &quot;Times New Roman&quot;;
+	font-weight: 500;
+	border-radius: 15px;
+	padding: 5px;
+}
+
+QPushButton:pressed {
+	background-color: rgba(255, 255, 255, 30);
+	padding-top: 7px;
+	padding-bottom: 3px;
+}</string>
+        </property>
+        <property name="text">
+         <string>Удалить</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="save_btn">
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+	color: rgb(255, 255, 255);
+	background-color: rgba(255, 255, 255, 50);
+	font: 12pt &quot;Times New Roman&quot;;
+	font-weight: 500;
+	border-radius: 15px;
+	padding: 5px;
+}
+
+QPushButton:pressed {
+	background-color: rgba(255, 255, 255, 30);
+	padding-top: 7px;
+	padding-bottom: 3px;
+}</string>
+        </property>
+        <property name="text">
+         <string>Сохранить</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>747</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QMenuBar {
+	background-color: rgb(137, 168, 138);
+	font: 10pt &quot;Times New Roman&quot;;
+	font-weight: 500;
+	color: rgb(255, 255, 255);
+}</string>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="styleSheet">
+     <string notr="true">QMenu {
+	background-color: rgb(137, 168, 138);
+	font: 10pt &quot;Times New Roman&quot;;
+	font-weight: 500;
+	color: rgb(255, 255, 255);
+}</string>
+    </property>
+    <property name="title">
+     <string>Файл</string>
+    </property>
+    <addaction name="action_pdf"/>
+    <addaction name="action_xlsx"/>
+    <addaction name="separator"/>
+    <addaction name="action_exit"/>
+   </widget>
+   <addaction name="menu"/>
+  </widget>
+  <action name="action_pdf">
+   <property name="text">
+    <string>Экспорт PDF</string>
+   </property>
+  </action>
+  <action name="action_xlsx">
+   <property name="text">
+    <string>Экспорт XLSX</string>
+   </property>
+  </action>
+  <action name="action_exit">
+   <property name="text">
+    <string>Выйти в меню</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
